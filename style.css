@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #add8e6;
+    background-color: #add8e6; /* Light blue background */
     margin: 0;
     padding: 20px;
 }
@@ -35,22 +35,23 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .question {
     cursor: pointer;
-    transition: transform 0.3s;
+    background-color: #fff; /* White background for questions */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .question:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
     transform: scale(1.02);
 }
 
 .question-text {
-    padding: 10px;
+    padding: 15px;
     border-bottom: 1px solid #ddd;
+    text-align: left;
 }
 
 #answer-box {
