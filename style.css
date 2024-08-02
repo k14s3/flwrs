@@ -1,36 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f8ff;
+    background-color: #d0f0ff;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
     color: #333;
 }
 
-#flower-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
+.flower-gif {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.flower {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#questions {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 10px 0;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
-.flower:hover {
-    transform: scale(1.1);
+.question:hover {
+    transform: scale(1.05);
 }
+
+.question-text {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.answer {
+    display: none;
+    background-color: #e0f7fa;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bottom-text {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    width: 100%;
+    max-width: 600px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
